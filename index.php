@@ -13,13 +13,15 @@ if(!empty($_SESSION['last_inserted_id']) && is_numeric($_SESSION['last_inserted_
 <head>
 	<title>Registration Form</title>
 	
-<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="style.css">
+<script src = "jquery-1.10.2.min.js"></script>
+<script src = "script.js"></script>
 </head>
   <body id="body-color">
 	<div id="Sign-Up">
 	<fieldset style="width:15%">
 	  <legend>Registration</legend>
-	<form action="adduser.php" method="post">
+	<form action="adduser.php" method="post" id="regform">
 		Username:  <input type="text" name="username"><br>
 		First Name: <input type="text" name="firstname"><br>
 		Last Name: <input type="text" name="lastname"><br>
